@@ -1,1 +1,1 @@
-# graphql v1
+# graphql v2
