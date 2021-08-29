@@ -1,13 +1,8 @@
-const express = require('express');
-const server = express();
+const server = require('./src/server');
 
 try{
     server.listen(4000);
-    console.log('server is running');
+    console.log('server is running.');
 }catch(err){
-    console.error('error starting server...', err);
+    console.error('error trying to run server', err);
 }
-
-server.use('/api', (req, res) => {
-    res.send('Hello');
-})
